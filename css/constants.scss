@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Oswald');
+
+// Font Constants
+$raleway: Raleway, sans-serif;
+$oswald: Oswald, sans-serif;
+
+// Mixins
+@mixin text {
+  font: {
+    family: $raleway
+  }
+  color: white;
+}
