@@ -1,3 +1,5 @@
+@import 'constants';
+
 .bg {
   width: 400px;
   height: auto;
@@ -10,7 +12,7 @@ h2 {
 }
 
 .instructions {
-  font-family: 'Raleway', sans-serif;
+  @include text;
   font-size: 15px;
   margin: 5px;
   div {

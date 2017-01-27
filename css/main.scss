@@ -1,0 +1,31 @@
+@import 'constants';
+
+body.darknUI {
+  ._4sp8 {
+    background-color: #262626;
+  }
+}
+
+.darknButton {
+    display: table;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 9999;
+    left: 50px;
+    top: 14px;
+    color: black;
+    border: 1px solid black;
+    font-size: 8px;
+    font-weight: 900;
+    text-align: center;
+
+    .darknText {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
