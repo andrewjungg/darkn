@@ -1,31 +1,149 @@
 @import 'constants';
 
-body.darknUI {
+.darknUI {
+
+  path, svg, circle {
+    stroke: $cream !important;
+    fill: $cream !important;
+  }
+
+  // Main background
   ._4sp8 {
-    background-color: #262626;
+    @include d-transition(background);
+    background-color: $gray;
+  }
+
+  // Message Input
+  ._mh6 ._4rv3 {
+    @include d-transition(background);
+    background-color: $browngray;
+  }
+
+  // Chat Banner & Messages Banner
+  ._5742, ._36ic._5l-3 {
+    @include d-transition(background);
+    background-color: $darkgray;
+  }
+
+  // New Message Color
+  ._1ht3._1ht1 {
+    @include d-transition(background);
+    background-color: $browngray;
+  }
+  // Chat Tabs
+  li._5l-3._1ht1:hover {
+    background-color: #121212;
+  }
+  ._1ht1._1ht2 {
+    background-color: #1C1C1C;
+  }
+
+  // Messages in Bubbles
+  ._1htf, span._3oh- {
+    @include text
+  }
+
+  em._4qba, ._4rv3{
+    @include text;
+  }
+
+  // Delivered Checkbox
+  ._9ah{
+    color: $cream !important;
+  }
+
+  // Check inside Delivered Checkbox
+  i._57e_ {
+    color: $darkgray !important;
+  }
+
+  // In Chat Member Names and Time Stamps
+  time._3oh-, ._3oh- span, abbr._1ht7{
+    color: $lightgray;
+  }
+
+  ._3oh- span {
+    @include text;
+  }
+
+  // Left Bar Chat Names
+  ._1ht6 {
+    @include title;
+  }
+
+  // Banner Chat Name
+  ._17w2 ._3oh-, {
+    @include title;
+    font: {
+      size: 18px;
+      weight: bold;
+    }
+  }
+
+  // Your Message Bubbles
+  ._o46._3i_m ._3058 {
+    @include d-transition(background);
+    background-color: #2A2A28 !important;
+  }
+
+  // Others' Message Bubbles
+  ._hh7 {
+    @include d-transition(background);
+    background-color: #2A2A28;
+    border: 1px solid $cream;
+  }
+
+  // Right Bar Member Names
+  ._364g {
+    @include text;
+  }
+
+  // Search bar
+  ._5iwm ._58al {
+    @include d-transition(background);
+    background-color: $browngray;
+    color: $cream;
+    &::-webkit-input-placeholder {
+       color: $cream;
+    }
+  }
+
+  // darkn Button
+  .darknButton {
+    color: $cream;
+    border: 1px solid $cream;
+  }
+  ._2jnv {
+    @include text;
   }
 }
 
 .darknButton {
-    display: table;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    z-index: 9999;
-    left: 50px;
-    top: 14px;
-    color: black;
-    border: 1px solid black;
-    font-size: 8px;
-    font-weight: 900;
-    text-align: center;
+  display: table;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  z-index: 9999;
+  right: 25px;
+  bottom: 25px;
+  color: $gray;
+  border: 1px solid $gray;
+  font-size: 8px;
+  font-weight: 900;
+  text-align: center;
 
+  .darknText {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    @include d-transition(background);
+    cursor: pointer;
+    background-color: $gray;
+    border: 1px solid $cream;
     .darknText {
-        display: table-cell;
-        vertical-align: middle;
+      color: $cream;
     }
-
-    &:hover {
-        cursor: pointer;
-    }
+  }
 }

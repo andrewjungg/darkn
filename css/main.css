@@ -1,17 +1,79 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald");
-body.darknUI ._4sp8 {
+@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster");
+.darknUI path, .darknUI svg, .darknUI circle {
+  stroke: #FCFBE3 !important;
+  fill: #FCFBE3 !important; }
+.darknUI ._4sp8 {
+  transition: background 0.5s ease;
+  background-color: #2A2A28; }
+.darknUI ._mh6 ._4rv3 {
+  transition: background 0.5s ease;
+  background-color: #3D3837; }
+.darknUI ._5742, .darknUI ._36ic._5l-3 {
+  transition: background 0.5s ease;
   background-color: #262626; }
+.darknUI ._1ht3._1ht1 {
+  transition: background 0.5s ease;
+  background-color: #3D3837; }
+.darknUI li._5l-3._1ht1:hover {
+  background-color: #121212; }
+.darknUI ._1ht1._1ht2 {
+  background-color: #1C1C1C; }
+.darknUI ._1htf, .darknUI span._3oh- {
+  font-family: Raleway, sans-serif;
+  color: #FCFBE3 !important; }
+.darknUI em._4qba, .darknUI ._4rv3 {
+  font-family: Raleway, sans-serif;
+  color: #FCFBE3 !important; }
+.darknUI ._9ah {
+  color: #FCFBE3 !important; }
+.darknUI i._57e_ {
+  color: #262626 !important; }
+.darknUI time._3oh-, .darknUI ._3oh- span, .darknUI abbr._1ht7 {
+  color: #91918D; }
+.darknUI ._3oh- span {
+  font-family: Raleway, sans-serif;
+  color: #FCFBE3 !important; }
+.darknUI ._1ht6 {
+  font-family: Oswald, sans-serif;
+  color: #FCFBE3 !important; }
+.darknUI ._17w2 ._3oh- {
+  font-family: Oswald, sans-serif;
+  color: #FCFBE3 !important;
+  font-size: 18px;
+  font-weight: bold; }
+.darknUI ._o46._3i_m ._3058 {
+  transition: background 0.5s ease;
+  background-color: #2A2A28 !important; }
+.darknUI ._hh7 {
+  transition: background 0.5s ease;
+  background-color: #2A2A28;
+  border: 1px solid #FCFBE3; }
+.darknUI ._364g {
+  font-family: Raleway, sans-serif;
+  color: #FCFBE3 !important; }
+.darknUI ._5iwm ._58al {
+  transition: background 0.5s ease;
+  background-color: #3D3837;
+  color: #FCFBE3; }
+  .darknUI ._5iwm ._58al::-webkit-input-placeholder {
+    color: #FCFBE3; }
+.darknUI .darknButton {
+  color: #FCFBE3;
+  border: 1px solid #FCFBE3; }
+.darknUI ._2jnv {
+  font-family: Raleway, sans-serif;
+  color: #FCFBE3 !important; }
 
 .darknButton {
   display: table;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   position: absolute;
   z-index: 9999;
-  left: 50px;
-  top: 14px;
-  color: black;
-  border: 1px solid black;
+  right: 25px;
+  bottom: 25px;
+  color: #2A2A28;
+  border: 1px solid #2A2A28;
   font-size: 8px;
   font-weight: 900;
   text-align: center; }
@@ -19,6 +81,11 @@ body.darknUI ._4sp8 {
     display: table-cell;
     vertical-align: middle; }
   .darknButton:hover {
-    cursor: pointer; }
+    transition: background 0.5s ease;
+    cursor: pointer;
+    background-color: #2A2A28;
+    border: 1px solid #FCFBE3; }
+    .darknButton:hover .darknText {
+      color: #FCFBE3; }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,7 +12,6 @@ function getPref() {
 
 function setPref(pref) {
   chrome.storage.sync.set({'darknPref': pref}, () => {
-    console.log(pref);
     chrome.runtime.error && console.log('Runtime error.');
   });
 }

@@ -1,13 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster');
 
 // Font Constants
 $raleway: Raleway, sans-serif;
 $oswald: Oswald, sans-serif;
+
+// Color
+$cream: #FCFBE3;
+$browngray: #3D3837;
+$gray: #2A2A28;
+$darkgray: #262626;
+$lightgray: #91918D;
 
 // Mixins
 @mixin text {
   font: {
     family: $raleway
   }
-  color: white;
+  color: $cream !important;
+}
+
+@mixin title {
+  font: {
+    family: $oswald
+  }
+  color: $cream !important;
+}
+
+@mixin d-transition($type) {
+  transition: $type 0.5s ease;
 }
