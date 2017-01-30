@@ -10,33 +10,31 @@
   background-color: #3D3837; }
 .darknUI ._5742, .darknUI ._36ic._5l-3 {
   transition: background 0.5s ease;
-  background-color: #262626; }
+  background-color: #1c1c1c; }
 .darknUI ._1ht3._1ht1 {
   transition: background 0.5s ease;
   background-color: #3D3837; }
-.darknUI li._5l-3._1ht1:hover {
-  background-color: #121212; }
-.darknUI ._1ht1._1ht2 {
-  background-color: #1C1C1C; }
-.darknUI ._1htf, .darknUI span._3oh- {
+.darknUI li._5l-3._1ht1:hover, .darknUI ._1ht1._1ht2 {
+  background-color: #1c1c1c; }
+.darknUI ._1htf, .darknUI em._4qba, .darknUI ._4rv3, .darknUI span._3oh-._58nk, .darknUI span._3oh-._58nk span {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
-.darknUI em._4qba, .darknUI ._4rv3 {
+.darknUI ._hh7 a {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
+  .darknUI ._hh7 a:hover {
+    transition: background 0.5s ease;
+    background-color: transparent; }
 .darknUI ._9ah {
   color: #FCFBE3 !important; }
 .darknUI i._57e_ {
-  color: #262626 !important; }
-.darknUI time._3oh-, .darknUI ._3oh- span, .darknUI abbr._1ht7 {
-  color: #91918D; }
-.darknUI ._3oh- span {
-  font-family: Raleway, sans-serif;
-  color: #FCFBE3 !important; }
+  color: #1c1c1c !important; }
+.darknUI time._3oh-, .darknUI ._ih3._3oh- span, .darknUI abbr._1ht7, .darknUI ._3oh- span {
+  color: #91918D !important; }
 .darknUI ._1ht6 {
   font-family: Oswald, sans-serif;
   color: #FCFBE3 !important; }
-.darknUI ._17w2 ._3oh- {
+.darknUI ._17w2 ._3oh- span {
   font-family: Oswald, sans-serif;
   color: #FCFBE3 !important;
   font-size: 18px;
@@ -44,10 +42,13 @@
 .darknUI ._o46._3i_m ._3058 {
   transition: background 0.5s ease;
   background-color: #2A2A28 !important; }
-.darknUI ._hh7 {
+.darknUI ._hh7, .darknUI ._52mr._2poz._ui9._5i_d {
   transition: background 0.5s ease;
   background-color: #2A2A28;
   border: 1px solid #FCFBE3; }
+.darknUI ._2f5n._4br2._29ew._3dug.__6j._43kk {
+  transition: background 0.5s ease;
+  background-color: #2A2A28; }
 .darknUI ._364g {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
@@ -57,6 +58,8 @@
   color: #FCFBE3; }
   .darknUI ._5iwm ._58al::-webkit-input-placeholder {
     color: #FCFBE3; }
+.darknUI .__6m, .darknUI ._4ik5._4ik4 {
+  color: #FCFBE3 !important; }
 .darknUI .darknButton {
   color: #FCFBE3;
   border: 1px solid #FCFBE3; }

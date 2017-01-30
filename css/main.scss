@@ -25,26 +25,27 @@
     background-color: $darkgray;
   }
 
-  // New Message Color
+  // New Message Chat Tab Color
   ._1ht3._1ht1 {
     @include d-transition(background);
     background-color: $browngray;
   }
   // Chat Tabs
-  li._5l-3._1ht1:hover {
-    background-color: #121212;
-  }
-  ._1ht1._1ht2 {
-    background-color: #1C1C1C;
+  li._5l-3._1ht1:hover, ._1ht1._1ht2 {
+    background-color: $darkgray;
   }
 
+// span._3oh-,
   // Messages in Bubbles
-  ._1htf, span._3oh- {
-    @include text
-  }
-
-  em._4qba, ._4rv3{
+  ._1htf,  em._4qba, ._4rv3, span._3oh-._58nk, span._3oh-._58nk span {
     @include text;
+  }
+  ._hh7 a {
+    @include text;
+    &:hover {
+      @include d-transition(background);
+      background-color: transparent;
+    }
   }
 
   // Delivered Checkbox
@@ -58,13 +59,10 @@
   }
 
   // In Chat Member Names and Time Stamps
-  time._3oh-, ._3oh- span, abbr._1ht7{
-    color: $lightgray;
+  time._3oh-, ._ih3._3oh- span, abbr._1ht7, ._3oh- span{
+    color: $lightgray !important;
   }
 
-  ._3oh- span {
-    @include text;
-  }
 
   // Left Bar Chat Names
   ._1ht6 {
@@ -72,7 +70,7 @@
   }
 
   // Banner Chat Name
-  ._17w2 ._3oh-, {
+  ._17w2 ._3oh- span {
     @include title;
     font: {
       size: 18px;
@@ -83,14 +81,18 @@
   // Your Message Bubbles
   ._o46._3i_m ._3058 {
     @include d-transition(background);
-    background-color: #2A2A28 !important;
+    background-color: $gray !important;
   }
 
   // Others' Message Bubbles
-  ._hh7 {
+  ._hh7, ._52mr._2poz._ui9._5i_d {
     @include d-transition(background);
-    background-color: #2A2A28;
+    background-color: $gray;
     border: 1px solid $cream;
+  }
+  ._2f5n._4br2._29ew._3dug.__6j._43kk {
+    @include d-transition(background);
+    background-color: $gray;
   }
 
   // Right Bar Member Names
@@ -106,6 +108,11 @@
     &::-webkit-input-placeholder {
        color: $cream;
     }
+  }
+
+  // Smart Link text
+  .__6m, ._4ik5._4ik4 {
+    color: $cream !important;
   }
 
   // darkn Button
