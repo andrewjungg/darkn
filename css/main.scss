@@ -9,57 +9,73 @@
 
   // Main background
   ._4sp8 {
-    @include d-transition(background);
+    @include ease(background);
     background-color: $gray;
+  }
+
+  // Chat Body
+  ._4u-c._1wfr._9hq {
+    box-shadow: inset 0 80px 50px -25px $darkgray;
   }
 
   // Message Input
   ._mh6 ._4rv3 {
-    @include d-transition(background);
-    background-color: $browngray;
+    @include ease(background);
+    background-color: $darkgray;
+  }
+  ._1mf._1mj span {
+    @include text;
   }
 
   // Chat Banner & Messages Banner
   ._5742, ._36ic._5l-3 {
-    @include d-transition(background);
+    @include ease(background);
     background-color: $darkgray;
   }
 
   // New Message Chat Tab Color
   ._1ht3._1ht1 {
-    @include d-transition(background);
-    background-color: $browngray;
-  }
-  // Chat Tabs
-  li._5l-3._1ht1:hover, ._1ht1._1ht2 {
+    @include ease(background);
     background-color: $darkgray;
   }
+  // Selected and Hover Chat Tabs
+  li._5l-3._1ht1:hover, ._1ht1._1ht2 {
+    @include ease(background);
+    background-color: $wine;
+    abbr {
+      color: $cream !important;
+    }
+  }
 
-// span._3oh-,
-  // Messages in Bubbles
-  ._1htf,  em._4qba, ._4rv3, span._3oh-._58nk, span._3oh-._58nk span {
+  // Text
+  ._1htf,  em._4qba, ._4rv3, span._3oh-._58nk, span._3oh-._58nk span, ._2jnv, ._3q34, ._3q35, span._3oh-, ._1mf._1mj span {
     @include text;
   }
   ._hh7 a {
     @include text;
     &:hover {
-      @include d-transition(background);
-      background-color: transparent;
+      @include ease(background);
+      background-color: $wine !important;
     }
   }
 
   // Delivered Checkbox
-  ._9ah{
+  span._2her._9ah {
+    width: 12px;
+    height: 12px;
     color: $cream !important;
   }
 
   // Check inside Delivered Checkbox
   i._57e_ {
     color: $darkgray !important;
+    margin-left: 4px;
+    padding-top: 1px;
   }
 
   // In Chat Member Names and Time Stamps
   time._3oh-, ._ih3._3oh- span, abbr._1ht7, ._3oh- span{
+    @include highlight;
     color: $lightgray !important;
   }
 
@@ -80,18 +96,18 @@
 
   // Your Message Bubbles
   ._o46._3i_m ._3058 {
-    @include d-transition(background);
-    background-color: $gray !important;
+    @include ease(background);
+    background-color: transparent !important;
   }
 
   // Others' Message Bubbles
   ._hh7, ._52mr._2poz._ui9._5i_d {
-    @include d-transition(background);
-    background-color: $gray;
+    @include ease(background);
+    background-color: transparent;
     border: 1px solid $cream;
   }
   ._2f5n._4br2._29ew._3dug.__6j._43kk {
-    @include d-transition(background);
+    @include ease(background);
     background-color: $gray;
   }
 
@@ -99,58 +115,63 @@
   ._364g {
     @include text;
   }
+  ._5l37:hover {
+    @include linear(background);
+    background-color: $wine;
+  }
 
   // Search bar
-  ._5iwm ._58al {
-    @include d-transition(background);
-    background-color: $browngray;
-    color: $cream;
-    &::-webkit-input-placeholder {
-       color: $cream;
+  ._5iwm {
+    padding: 15px 12px;
+    ._58al {
+      @include highlight;
+      @include ease(background);
+      background-color: $gray;
+      color: $cream;
+      &::-webkit-input-placeholder {
+        color: $cream;
+      }
+      border-radius: 0;
+      &:focus {
+        @include linear(padding);
+        padding: 15px 0 25px 35px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid $wine;
+      }
+      &:not(:focus) {
+        @include linear(padding);
+        padding: 15px 12px;
+      }
     }
   }
 
-  // Smart Link text
+  // New Chat input
+  input._58al {
+    @include highlight;
+    color: $cream;
+    &::-webkit-input-placeholder {
+      color: $cream;
+    }
+    &:focus {
+      @include linear(padding);
+      padding: 15px 0 15px 15px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid $wine;
+    }
+    &:not(:focus) {
+      @include linear(padding);
+      padding: none;
+    }
+  }
+
+  // Create New Chat Window
+  ._2y8_ {
+    background-color: $darkgray;
+  }
+
+  // Smart Link Text
   .__6m, ._4ik5._4ik4 {
     color: $cream !important;
   }
 
-  // darkn Button
-  .darknButton {
-    color: $cream;
-    border: 1px solid $cream;
-  }
-  ._2jnv {
-    @include text;
-  }
-}
-
-.darknButton {
-  display: table;
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  z-index: 9999;
-  right: 25px;
-  bottom: 25px;
-  color: $gray;
-  border: 1px solid $gray;
-  font-size: 8px;
-  font-weight: 900;
-  text-align: center;
-
-  .darknText {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  &:hover {
-    @include d-transition(background);
-    cursor: pointer;
-    background-color: $gray;
-    border: 1px solid $cream;
-    .darknText {
-      color: $cream;
-    }
-  }
 }

@@ -6,26 +6,39 @@ $oswald: Oswald, sans-serif;
 
 // Color
 $cream: #FCFBE3;
-$browngray: #3D3837;
 $gray: #2A2A28;
 $darkgray: #1c1c1c;
 $lightgray: #91918D;
+$pink: #FF3F80;
+$wine: #7F1F40;
 
 // Mixins
+@mixin highlight {
+  &::selection {
+    color: $darkgray;
+    background-color: $pink;
+  }
+}
 @mixin text {
+  @include highlight;
   font: {
     family: $raleway
   }
   color: $cream !important;
 }
 
+
 @mixin title {
+  @include highlight;
   font: {
     family: $oswald
   }
   color: $cream !important;
 }
 
-@mixin d-transition($type) {
+@mixin ease($type) {
   transition: $type 0.5s ease;
+}
+@mixin linear($type) {
+  transition: $type 0.2s linear;
 }
