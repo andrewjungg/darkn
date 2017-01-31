@@ -7,10 +7,14 @@
     fill: $cream !important;
   }
 
-  // Main background
-  ._4sp8 {
+  // Main background color
+  ._4sp8, ul._29hl, ._4eby._2c9g, h2._4ebz {
     @include ease(background);
     background-color: $gray;
+  }
+
+  ._225b {
+    background: $darkgray;
   }
 
   // Chat Body
@@ -27,8 +31,8 @@
     @include text;
   }
 
-  // Chat Banner & Messages Banner
-  ._5742, ._36ic._5l-3 {
+  // Banners
+  ._5742, ._36ic._5l-3, div._4jgp h2._4ebz {
     @include ease(background);
     background-color: $darkgray;
   }
@@ -47,9 +51,25 @@
     }
   }
 
+  li._54ni.__MenuItem:hover {
+    span._54nh em._4qba {
+      color: $cream;
+    }
+  }
+
   // Text
-  ._1htf,  em._4qba, ._4rv3, span._3oh-._58nk, span._3oh-._58nk span, ._2jnv, ._3q34, ._3q35, span._3oh-, ._1mf._1mj span {
+  ._1htf, ._3szq em._4qba, ._1lj0 em._4qba,
+  ._4rv3, span._3oh-._58nk, span._3oh-._58nk span, ._2jnv, ._3q34,
+  ._3q35, span._3oh-, ._1mf._1mj span, ._1li_ a, ._4rpj em._4qba,
+  ._3eus em._4qba, ._19jt em._4qba, ._4eby ._5ixy, div._29hk em._4qba, ._1tqi em._4qba,
+  h2._4ebz, label.uiInputLabelLabel em._4qba {
     @include text;
+  }
+  span._54nh em._4qba {
+    color: $darkgray;
+  }
+  ._2i-c ._54ne:hover {
+    color: $cream !important;
   }
   ._hh7 a {
     @include text;
@@ -94,10 +114,19 @@
     }
   }
 
+  // Add New Members window
+  ._4jgp {
+    background: $gray;
+  }
+
   // Your Message Bubbles
   ._o46._3i_m ._3058 {
     @include ease(background);
     background-color: transparent !important;
+    border: 2px solid $wine;
+  }
+  ._3058._15gf {
+    border: none !important;
   }
 
   // Others' Message Bubbles
@@ -105,6 +134,9 @@
     @include ease(background);
     background-color: transparent;
     border: 1px solid $cream;
+    &:active {
+      background-color: $darkgray;
+    }
   }
   ._2f5n._4br2._29ew._3dug.__6j._43kk {
     @include ease(background);
@@ -144,6 +176,9 @@
       }
     }
   }
+  ._4jgt._14-7 {
+    margin: 5px;
+  }
 
   // New Chat input
   input._58al {
@@ -165,8 +200,8 @@
   }
 
   // Create New Chat Window
-  ._2y8_ {
-    background-color: $darkgray;
+  ._2y8_, ._4t2a {
+    background-color: $darkgray !important;
   }
 
   // Smart Link Text

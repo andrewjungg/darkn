@@ -3,9 +3,11 @@
 .darknUI path, .darknUI svg, .darknUI circle {
   stroke: #FCFBE3 !important;
   fill: #FCFBE3 !important; }
-.darknUI ._4sp8 {
+.darknUI ._4sp8, .darknUI ul._29hl, .darknUI ._4eby._2c9g, .darknUI h2._4ebz {
   transition: background 0.5s ease;
   background-color: #2A2A28; }
+.darknUI ._225b {
+  background: #1c1c1c; }
 .darknUI ._4u-c._1wfr._9hq {
   box-shadow: inset 0 80px 50px -25px #1c1c1c; }
 .darknUI ._mh6 ._4rv3 {
@@ -17,7 +19,7 @@
   .darknUI ._1mf._1mj span::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
-.darknUI ._5742, .darknUI ._36ic._5l-3 {
+.darknUI ._5742, .darknUI ._36ic._5l-3, .darknUI div._4jgp h2._4ebz {
   transition: background 0.5s ease;
   background-color: #1c1c1c; }
 .darknUI ._1ht3._1ht1 {
@@ -28,12 +30,26 @@
   background-color: #7F1F40; }
   .darknUI li._5l-3._1ht1:hover abbr, .darknUI ._1ht1._1ht2 abbr {
     color: #FCFBE3 !important; }
-.darknUI ._1htf, .darknUI em._4qba, .darknUI ._4rv3, .darknUI span._3oh-._58nk, .darknUI span._3oh-._58nk span, .darknUI ._2jnv, .darknUI ._3q34, .darknUI ._3q35, .darknUI span._3oh-, .darknUI ._1mf._1mj span {
+.darknUI li._54ni.__MenuItem:hover span._54nh em._4qba {
+  color: #FCFBE3; }
+.darknUI ._1htf, .darknUI ._3szq em._4qba, .darknUI ._1lj0 em._4qba,
+.darknUI ._4rv3, .darknUI span._3oh-._58nk, .darknUI span._3oh-._58nk span, .darknUI ._2jnv, .darknUI ._3q34,
+.darknUI ._3q35, .darknUI span._3oh-, .darknUI ._1mf._1mj span, .darknUI ._1li_ a, .darknUI ._4rpj em._4qba,
+.darknUI ._3eus em._4qba, .darknUI ._19jt em._4qba, .darknUI ._4eby ._5ixy, .darknUI div._29hk em._4qba, .darknUI ._1tqi em._4qba,
+.darknUI h2._4ebz, .darknUI label.uiInputLabelLabel em._4qba {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
-  .darknUI ._1htf::selection, .darknUI em._4qba::selection, .darknUI ._4rv3::selection, .darknUI span._3oh-._58nk::selection, .darknUI span._3oh-._58nk span::selection, .darknUI ._2jnv::selection, .darknUI ._3q34::selection, .darknUI ._3q35::selection, .darknUI span._3oh-::selection, .darknUI ._1mf._1mj span::selection {
+  .darknUI ._1htf::selection, .darknUI ._3szq em._4qba::selection, .darknUI ._1lj0 em._4qba::selection,
+  .darknUI ._4rv3::selection, .darknUI span._3oh-._58nk::selection, .darknUI span._3oh-._58nk span::selection, .darknUI ._2jnv::selection, .darknUI ._3q34::selection,
+  .darknUI ._3q35::selection, .darknUI span._3oh-::selection, .darknUI ._1mf._1mj span::selection, .darknUI ._1li_ a::selection, .darknUI ._4rpj em._4qba::selection,
+  .darknUI ._3eus em._4qba::selection, .darknUI ._19jt em._4qba::selection, .darknUI ._4eby ._5ixy::selection, .darknUI div._29hk em._4qba::selection, .darknUI ._1tqi em._4qba::selection,
+  .darknUI h2._4ebz::selection, .darknUI label.uiInputLabelLabel em._4qba::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
+.darknUI span._54nh em._4qba {
+  color: #1c1c1c; }
+.darknUI ._2i-c ._54ne:hover {
+  color: #FCFBE3 !important; }
 .darknUI ._hh7 a {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
@@ -70,13 +86,20 @@
   .darknUI ._17w2 ._3oh- span::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
+.darknUI ._4jgp {
+  background: #2A2A28; }
 .darknUI ._o46._3i_m ._3058 {
   transition: background 0.5s ease;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+  border: 2px solid #7F1F40; }
+.darknUI ._3058._15gf {
+  border: none !important; }
 .darknUI ._hh7, .darknUI ._52mr._2poz._ui9._5i_d {
   transition: background 0.5s ease;
   background-color: transparent;
   border: 1px solid #FCFBE3; }
+  .darknUI ._hh7:active, .darknUI ._52mr._2poz._ui9._5i_d:active {
+    background-color: #1c1c1c; }
 .darknUI ._2f5n._4br2._29ew._3dug.__6j._43kk {
   transition: background 0.5s ease;
   background-color: #2A2A28; }
@@ -109,6 +132,8 @@
     .darknUI ._5iwm ._58al:not(:focus) {
       transition: padding 0.2s linear;
       padding: 15px 12px; }
+.darknUI ._4jgt._14-7 {
+  margin: 5px; }
 .darknUI input._58al {
   color: #FCFBE3; }
   .darknUI input._58al::selection {
@@ -124,8 +149,8 @@
   .darknUI input._58al:not(:focus) {
     transition: padding 0.2s linear;
     padding: none; }
-.darknUI ._2y8_ {
-  background-color: #1c1c1c; }
+.darknUI ._2y8_, .darknUI ._4t2a {
+  background-color: #1c1c1c !important; }
 .darknUI .__6m, .darknUI ._4ik5._4ik4 {
   color: #FCFBE3 !important; }
 
