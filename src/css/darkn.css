@@ -36,14 +36,14 @@
 .darknUI ._4rv3, .darknUI span._3oh-._58nk, .darknUI span._3oh-._58nk span, .darknUI ._2jnv, .darknUI ._3q34,
 .darknUI ._3q35, .darknUI span._3oh-, .darknUI ._1mf._1mj span, .darknUI ._1li_ a, .darknUI ._4rpj em._4qba,
 .darknUI ._3eus em._4qba, .darknUI ._19jt em._4qba, .darknUI ._4eby ._5ixy, .darknUI div._29hk em._4qba, .darknUI ._1tqi em._4qba,
-.darknUI h2._4ebz, .darknUI label.uiInputLabelLabel em._4qba {
+.darknUI h2._4ebz, .darknUI label.uiInputLabelLabel em._4qba, .darknUI div._5742 em._4qba {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
   .darknUI ._1htf::selection, .darknUI ._3szq em._4qba::selection, .darknUI ._1lj0 em._4qba::selection,
   .darknUI ._4rv3::selection, .darknUI span._3oh-._58nk::selection, .darknUI span._3oh-._58nk span::selection, .darknUI ._2jnv::selection, .darknUI ._3q34::selection,
   .darknUI ._3q35::selection, .darknUI span._3oh-::selection, .darknUI ._1mf._1mj span::selection, .darknUI ._1li_ a::selection, .darknUI ._4rpj em._4qba::selection,
   .darknUI ._3eus em._4qba::selection, .darknUI ._19jt em._4qba::selection, .darknUI ._4eby ._5ixy::selection, .darknUI div._29hk em._4qba::selection, .darknUI ._1tqi em._4qba::selection,
-  .darknUI h2._4ebz::selection, .darknUI label.uiInputLabelLabel em._4qba::selection {
+  .darknUI h2._4ebz::selection, .darknUI label.uiInputLabelLabel em._4qba::selection, .darknUI div._5742 em._4qba::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
 .darknUI span._54nh em._4qba {
@@ -78,14 +78,24 @@
   .darknUI ._1ht6::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
-.darknUI ._17w2 ._3oh- span {
+.darknUI ._5742 h2._17w2 {
   font-family: Oswald, sans-serif;
   color: #FCFBE3 !important;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold; }
-  .darknUI ._17w2 ._3oh- span::selection {
+  .darknUI ._5742 h2._17w2::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
+.darknUI ._1_fz {
+  text-align: center !important; }
+  .darknUI ._1_fz ._17w2 ._3oh- span {
+    font-family: Oswald, sans-serif;
+    color: #FCFBE3 !important;
+    font-size: 18px;
+    font-weight: bold; }
+    .darknUI ._1_fz ._17w2 ._3oh- span::selection {
+      color: #1c1c1c;
+      background-color: #FF3F80; }
 .darknUI ._4jgp {
   background: #2A2A28; }
 .darknUI ._o46._3i_m ._3058 {

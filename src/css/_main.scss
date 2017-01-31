@@ -62,7 +62,7 @@
   ._4rv3, span._3oh-._58nk, span._3oh-._58nk span, ._2jnv, ._3q34,
   ._3q35, span._3oh-, ._1mf._1mj span, ._1li_ a, ._4rpj em._4qba,
   ._3eus em._4qba, ._19jt em._4qba, ._4eby ._5ixy, div._29hk em._4qba, ._1tqi em._4qba,
-  h2._4ebz, label.uiInputLabelLabel em._4qba {
+  h2._4ebz, label.uiInputLabelLabel em._4qba, div._5742 em._4qba {
     @include text;
   }
   span._54nh em._4qba {
@@ -106,11 +106,21 @@
   }
 
   // Banner Chat Name
-  ._17w2 ._3oh- span {
+  ._5742 h2._17w2 {
     @include title;
     font: {
-      size: 18px;
+      size: 16px;
       weight: bold;
+    }
+  }
+  ._1_fz {
+    text-align: center !important;
+    ._17w2 ._3oh- span {
+      @include title;
+      font: {
+        size: 18px;
+        weight: bold;
+      }
     }
   }
 
