@@ -9,8 +9,9 @@ const gulp      = require('gulp'),
       babel     = require('gulp-babel'),
       rename    = require('gulp-rename');
 
+
 // Convert SASS to CSS
-gulp.task('sass', function() {
+gulp.task('sass', function(callback) {
   return gulp.src('src/scss/*.scss')
   .pipe(sass())
   .pipe(gulp.dest('src/css'))
@@ -39,13 +40,6 @@ gulp.task('uglify', function() {
   .pipe(gulp.dest('dist/js'))
 });
 
-gulp.src("./css/*.css")
-  .pipe(rename(function (path) {
-    path.basename += ".min";
-    path.extname = ".css";
-  }))
-  .pipe(gulp.dest("./dist"));
-
 // Minify Images
 gulp.task('images', function() {
   return gulp.src('src/img/*.+(png|jpg|gif|svg)')
@@ -73,18 +67,25 @@ gulp.task('clean', function() {
   return del.sync('dist');
 });
 
-
-// Watch Task
-gulp.task('watch', ['sass', 'cssnano'], function() {
-  gulp.watch('src/scss/*.scss', ['sass', 'cssnano']);
+// Build CSS Task
+gulp.task('styles', function(callback) {
+  sequence('sass',
+    'cssnano',
+    callback
+  );
 });
 
-// Build Task
+// Watch Task
+gulp.task('watch', ['styles'], function() {
+  gulp.watch('src/scss/*.scss', ['styles']);
+});
+
+// Build Project Task
 gulp.task('build', function (callback) {
   sequence('clean',
-    ['sass', 'cssnano', 'uglify', 'images', 'manifest', 'html'],
-  callback
-  )
+    ['styles', 'uglify', 'images', 'manifest', 'html'],
+    callback
+  );
 });
 
 // Default Task
