@@ -212,6 +212,7 @@
   background: #2A2A28;
   opacity: 1; }
   .darknButton:hover {
+    transition: background 0.2s linear;
     opacity: 0.9;
     background: #7F1F40; }
 
@@ -220,6 +221,7 @@
   border: 1.5px solid #FCFBE3;
   opacity: 0.9; }
   .darknUI .darknButton:hover {
+    transition: background 0.2s linear;
     background: #FCFBE3;
     border: 1px solid #2A2A28; }
   .darknUI .darknButton #light {
@@ -228,9 +230,9 @@
     -webkit-transition: background 0.5s ease-in-out;
     transition: background 0.5s ease-in-out; }
   .darknUI .darknButton .bulb-top, .darknUI .darknButton .bulb-bottom {
-    background: #FFFFD5; }
+    background: #fe3; }
   .darknUI .darknButton .bulb-middle-1 {
-    border-top: 9px solid #FFFFD5; }
+    border-top: 9px solid #Fe3; }
 
 .container {
   text-align: center;
