@@ -83,15 +83,15 @@ gulp.task('watch', ['sass', 'manifest'], function() {
 gulp.task('build', function (callback) {
   sequence('clean',
     ['sass', 'cssnano', 'uglify', 'images', 'manifest', 'html'],
-    callback
+  callback
   )
 });
 
 // Default Task
 gulp.task('default', function(callback) {
-    sequence('clean',
-      ['sass', 'uglify', 'images', 'manifest', 'html'],
-      'watch',
-      callback
-    );
+  sequence('clean',
+    ['sass', 'cssnano', 'uglify', 'images', 'manifest', 'html'],
+    'watch',
+    callback
+  );
 });
