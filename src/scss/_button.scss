@@ -1,9 +1,9 @@
 @import 'constants';
 
 .darknButton {
-  display: table;
-  height: 70px !important;
-  width: 70px !important;
+  display: block;
+  height: 50px !important;
+  width: 50px !important;
   position: absolute;
   z-index: 300;
   right: 50px;
@@ -12,13 +12,13 @@
   font-size: 8px;
   font-weight: 900;
   text-align: center;
-  border: 1.5px solid $cream;
-  border-radius: 150px;
+  border-radius: 50%;
   background: $gray;
-  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
   &:hover {
     @include linear(background);
-    opacity: 0.9;
     background: $wine
   }
 }
@@ -26,26 +26,26 @@
 .darknUI {
   // darkn Button
   .darknButton {
-    background: $gray;
-    border: 1.5px solid $cream;
-    opacity: 0.9;
+    background: $wine;
 
     &:hover {
       @include linear(background);
-      background: $cream;
-      border: 1px solid $gray;
+      background: $gray;
     }
 
     #light {
       opacity: 1;
     }
+
     .bulb-top, .bulb-bottom {
       -webkit-transition: background 0.5s ease-in-out;
     	transition: background 0.5s ease-in-out;
     }
+
     .bulb-top, .bulb-bottom {
       background: #fe3;
     }
+
     .bulb-middle-1 {
       border-top: 9px solid #Fe3;
     }
@@ -54,7 +54,7 @@
 
 .container {
   text-align: center;
-  margin: 20px auto;
+  margin: 11px;
 }
 
 .bulb-light {
@@ -116,7 +116,7 @@
   width: 10px;
 	height: 0;
 	border-left: 3px solid transparent;
-	border-right: 5px solid transparent;
+	border-right: 3px solid transparent;
 	border-top: 9px solid #E7E7E7;
 }
 
@@ -143,8 +143,8 @@
   width: 8px;
 	height: 0;
 	border-left: 0px solid transparent;
-	border-right:3px solid transparent;
-	border-top: 7px solid #D3D3D3;
+	border-right: 3px solid transparent;
+	border-top: 6px solid #D3D3D3;
 	border-radius: 2px;
 }
 
@@ -155,7 +155,7 @@
 	height: 0;
 	border-left: 2px solid transparent;
 	border-right: 2px solid transparent;
-	border-top: 2px solid #262626;
+	border-top: 2px solid black;
 }
 
 .bulb-middle-1 {

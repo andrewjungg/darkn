@@ -37,7 +37,7 @@ chrome.runtime.sendMessage({}, () => {
       darknButton = document.createElement('span'),
       darknText = document.createElement('span'),
       bulb = `<div class="container">
-        <a class="bulb-light">
+        <div class="bulb-light">
           <div id="light"></div>
           <div id="bulb">
             <div class="bulb-top">
@@ -50,7 +50,7 @@ chrome.runtime.sendMessage({}, () => {
             <div class="screw-top"></div>
             <div class="screw-d"></div>
           </div>
-        </a>
+        </div>
       </div>`;
 
       darknButton.setAttribute('id', 'darknButton');

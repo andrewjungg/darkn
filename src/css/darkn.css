@@ -196,9 +196,9 @@
   color: #FCFBE3 !important; }
 
 .darknButton {
-  display: table;
-  height: 70px !important;
-  width: 70px !important;
+  display: block;
+  height: 50px !important;
+  width: 50px !important;
   position: absolute;
   z-index: 300;
   right: 50px;
@@ -207,23 +207,19 @@
   font-size: 8px;
   font-weight: 900;
   text-align: center;
-  border: 1.5px solid #FCFBE3;
-  border-radius: 150px;
+  border-radius: 50%;
   background: #2A2A28;
-  opacity: 1; }
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   .darknButton:hover {
     transition: background 0.2s linear;
-    opacity: 0.9;
     background: #7F1F40; }
 
 .darknUI .darknButton {
-  background: #2A2A28;
-  border: 1.5px solid #FCFBE3;
-  opacity: 0.9; }
+  background: #7F1F40; }
   .darknUI .darknButton:hover {
     transition: background 0.2s linear;
-    background: #FCFBE3;
-    border: 1px solid #2A2A28; }
+    background: #2A2A28; }
   .darknUI .darknButton #light {
     opacity: 1; }
   .darknUI .darknButton .bulb-top, .darknUI .darknButton .bulb-bottom {
@@ -236,7 +232,7 @@
 
 .container {
   text-align: center;
-  margin: 20px auto; }
+  margin: 11px; }
 
 .bulb-light {
   position: relative;
@@ -292,7 +288,7 @@
   width: 10px;
   height: 0;
   border-left: 3px solid transparent;
-  border-right: 5px solid transparent;
+  border-right: 3px solid transparent;
   border-top: 9px solid #E7E7E7; }
 
 .bulb-bottom {
@@ -317,7 +313,7 @@
   height: 0;
   border-left: 0px solid transparent;
   border-right: 3px solid transparent;
-  border-top: 7px solid #D3D3D3;
+  border-top: 6px solid #D3D3D3;
   border-radius: 2px; }
 
 .screw-d {
@@ -327,7 +323,7 @@
   height: 0;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
-  border-top: 2px solid #262626; }
+  border-top: 2px solid black; }
 
 .bulb-middle-1 {
   -webkit-transition: border 0.5s ease-in-out;
