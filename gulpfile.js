@@ -75,8 +75,8 @@ gulp.task('clean', function() {
 
 
 // Watch Task
-gulp.task('watch', ['sass', 'cssnano', 'manifest'], function() {
-  gulp.watch('src/scss/*.scss', ['sass']);
+gulp.task('watch', ['sass', 'cssnano'], function() {
+  gulp.watch('src/scss/*.scss', ['sass', 'cssnano']);
 });
 
 // Build Task
@@ -90,7 +90,7 @@ gulp.task('build', function (callback) {
 // Default Task
 gulp.task('default', function(callback) {
   sequence('clean',
-    ['uglify', 'images', 'html'],
+    ['uglify', 'images', 'html', 'manifest'],
     'watch',
     callback
   );
