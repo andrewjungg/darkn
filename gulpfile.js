@@ -75,7 +75,7 @@ gulp.task('clean', function() {
 
 
 // Watch Task
-gulp.task('watch', ['sass', 'manifest'], function() {
+gulp.task('watch', ['sass', 'cssnano', 'manifest'], function() {
   gulp.watch('src/scss/*.scss', ['sass']);
 });
 
@@ -90,7 +90,7 @@ gulp.task('build', function (callback) {
 // Default Task
 gulp.task('default', function(callback) {
   sequence('clean',
-    ['sass', 'cssnano', 'uglify', 'images', 'manifest', 'html'],
+    ['uglify', 'images', 'html'],
     'watch',
     callback
   );

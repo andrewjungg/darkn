@@ -201,8 +201,8 @@
   width: 50px !important;
   position: absolute;
   z-index: 300;
-  right: 75px;
-  bottom: 75px;
+  right: 50px;
+  bottom: 50px;
   color: #2A2A28;
   font-size: 8px;
   font-weight: 900;
@@ -216,10 +216,10 @@
   transition: background 0.5s ease-in-out; }
 
 .darknUI .darknButton .bulb-top, .darknUI .darknButton .bulb-bottom {
-  background: #FFFFD5; }
+  background: #FFFF88; }
 
 .darknUI .darknButton .bulb-middle-1 {
-  border-top: 9px solid #FFFFD5; }
+  border-top: 9px solid #FFFF88; }
 
 .container {
   text-align: center;
