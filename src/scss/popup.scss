@@ -1,7 +1,7 @@
 @import 'constants';
 
 .bg {
-  width: 400px;
+  width: auto;
   height: auto;
   background-color: #262626;
   color: white;
@@ -27,10 +27,16 @@ h2 {
 .darkn {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
-  color: white;
+  color: $gray;
   background-color: #262626;
-  float: right;
-  margin: 55px 22px 22px 22px;
+  margin: 35px 22px;
   padding: 10px;
   border: solid #ffffff 10px;
+}
+
+.icon {
+  margin-bottom: 35px;
+  display: block;
+  height: 40px;
+  width: 40px;
 }
