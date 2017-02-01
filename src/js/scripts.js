@@ -12,7 +12,7 @@ function getPref() {
 
 function setPref(pref) {
   chrome.storage.sync.set({'darknPref': pref}, () => {
-    chrome.runtime.error && console.log('Runtime error.');
+    chrome.runtime.error;
   });
 }
 
@@ -28,7 +28,7 @@ function toggleUI() {
   }
 }
 
-window.onload = () => {
+chrome.runtime.sendMessage({}, () => {
   let intervalCheck = setInterval(() => {
     if (document.readyState === 'complete') {
       clearInterval(intervalCheck);
@@ -69,4 +69,4 @@ window.onload = () => {
       });
     }
   }, 10);
-}
+});
