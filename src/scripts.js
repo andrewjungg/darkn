@@ -35,16 +35,29 @@ window.onload = () => {
 
       const container = document.getElementsByTagName('body')[0],
       darknButton = document.createElement('span'),
-      darknText = document.createElement('span');
+      darknText = document.createElement('span'),
+      bulb = `<div class="container">
+        <a class="bulb-light">
+          <div id="light"></div>
+          <div id="bulb">
+            <div class="bulb-top">
+              <div class="reflection"></div>
+            </div>
+            <div class="bulb-middle-1"></div>
+            <div class="bulb-bottom"></div>
+          </div>
+          <div id="base">
+            <div class="screw-top"></div>
+            <div class="screw-d"></div>
+          </div>
+        </a>
+      </div>`;
 
       darknButton.setAttribute('id', 'darknButton');
       darknButton.setAttribute('class', 'darknButton');
-
-      darknText.setAttribute('class', 'darknText');
-      darknText.innerHTML = 'darkn.';
+      darknButton.innerHTML = bulb;
 
       container.appendChild(darknButton);
-      darknButton.appendChild(darknText);
 
       getPref().then(pref => {
         if (pref.darknUI) {
