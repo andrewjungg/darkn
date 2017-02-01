@@ -4,8 +4,8 @@ Chrome extension to darkn Facebook Messenger
 ## Setting Up
 Clone the repo and install the packages.
 ```
-git clone git@github.com:andrewjungg/darkn.git
-npm i
+$ git clone git@github.com:andrewjungg/darkn.git
+$ npm i
 ```
 
 
@@ -13,15 +13,15 @@ npm i
 
 Run ```gulp``` to minify and watch.
 ```
-gulp
+$ gulp
 ```
 
 Run ```gulp build``` to just minify.
 ```
-gulp build
+$ gulp build
 ```
 
 Run ```gulp watch``` to just watch.
 ```
-gulp watch
+$ gulp watch
 ```
