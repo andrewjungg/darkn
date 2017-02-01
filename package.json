@@ -1,0 +1,34 @@
+{
+  "name": "darkn",
+  "version": "1.0.0",
+  "description": "darkn facebook messenger and save your eyes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewjungg/darkn.git"
+  },
+  "author": "Euihyun Chung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewjungg/darkn/issues"
+  },
+  "homepage": "https://github.com/andrewjungg/darkn#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.18.7",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.5",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}

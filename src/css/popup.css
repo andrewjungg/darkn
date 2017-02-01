@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster");
 .bg {
   width: 400px;
   height: auto;
@@ -10,9 +10,12 @@ h2 {
 
 .instructions {
   font-family: Raleway, sans-serif;
-  color: white;
+  color: #FCFBE3 !important;
   font-size: 15px;
   margin: 5px; }
+  .instructions::selection {
+    color: #1c1c1c;
+    background-color: #FF3F80; }
   .instructions div {
     margin: 15px; }
 
@@ -28,5 +31,3 @@ h2 {
   margin: 55px 22px 22px 22px;
   padding: 10px;
   border: solid #ffffff 10px; }
-
-/*# sourceMappingURL=popup.css.map */

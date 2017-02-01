@@ -4,7 +4,7 @@
   "description": "darkn your Messenger",
   "version": "1.0",
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "img/icon.png",
     "default_popup": "popup.html",
     "default_title": "darkn."
   },
@@ -18,10 +18,10 @@
         "https://www.facebook.com/messages/*"
       ],
       "css": [
-        "css/darkn.css"
+        "css/darkn.min.css"
       ],
       "js": [
-        "scripts.js"
+        "js/scripts.min.js"
       ]
     }
   ]

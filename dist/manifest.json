@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "darkn",
+  "description": "darkn your Messenger",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "../src/popup.html",
+    "default_title": "darkn."
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.messenger.com/*",
+        "https://www.facebook.com/messages/*"
+      ],
+      "css": [
+        "css/darkn.min.css"
+      ],
+      "js": [
+        "js/scripts.min.js"
+      ]
+    }
+  ]
+}
