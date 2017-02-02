@@ -1,5 +1,7 @@
 # darkn
 Chrome extension to darkn Facebook Messenger
+![alt text](https://github.com/andrewjungg/darkn/blob/master/dist/img/darknscreenshot.png "Preview Screenshot")
+
 
 ## Setting Up
 Clone the repo and install the packages.
