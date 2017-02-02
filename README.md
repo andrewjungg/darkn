@@ -2,7 +2,6 @@
 Chrome extension to darkn Facebook Messenger
 
 ![alt text](https://github.com/andrewjungg/darkn/blob/master/dist/img/darknscreenshot.png "darkn Preview Screenshot")
-***
 
 ## Good to Knows
 + ES6
