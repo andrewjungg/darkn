@@ -1,4 +1,4 @@
-# darkn ![alt text](https://github.com/andrewjungg/darkn/blob/master/dist/img/icon48.png "darkn Logo")
+# ![alt text](https://github.com/andrewjungg/darkn/blob/master/dist/img/icon48.png "darkn Logo") darkn
 Chrome extension to darkn Facebook Messenger
 ![alt text](https://github.com/andrewjungg/darkn/blob/master/dist/img/darknscreenshot.png "darkn Preview Screenshot")
 
