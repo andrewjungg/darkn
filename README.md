@@ -6,6 +6,7 @@ Chrome extension to darkn Facebook Messenger
 ## Good to Knows
 + ES6
 + Gulp
++ Sass
 
 ## Setting Up
 Clone the repo and install the packages.
