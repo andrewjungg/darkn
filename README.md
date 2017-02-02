@@ -38,6 +38,9 @@ $ gulp watch
 4. Push your branch ```git push -u origin YOUR-NEW-BRANCH```
 5. Send me a pull request
 
+## Bugs and Issues?
+Feel free to open up an issue and I'll try to fix it ASAP. Or if you think you know the fix please feel free to open a branch and send a pull request!
+
 ## Special Thanks
 + [@ifalluphill](https://github.com/iFallUpHill) for help with the script
 + [@jackforbes](https://github.com/JackForbes) for the icon
