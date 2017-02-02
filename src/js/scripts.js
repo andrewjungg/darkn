@@ -60,7 +60,7 @@ chrome.runtime.sendMessage({}, () => {
       container.appendChild(darknButton);
 
       getPref().then(pref => {
-        if (pref.darknUI) {
+        if (pref.darknPref) {
           document.querySelector('body').classList.add('darknUI');
         } else {
           document.querySelector('body').classList.remove('darknUI');
