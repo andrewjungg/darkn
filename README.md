@@ -33,7 +33,7 @@ $ gulp watch
 
 ## Want to Add Features? Contribute Please
 1. Create a new branch ```git checkout -b YOUR-NEW-BRANCH```
-2. Add your changes ```git add FILES-THAT-HAVE-BEEN-CHANGED``` or ```git add -A```
+2. Add your changes ```git add CHANGED-FILES``` or ```git add -A```
 3. Commit your changes ```git commit -m 'Added YOUR NEW FEATURE'```
 4. Push your branch ```git push -u origin YOUR-NEW-BRANCH```
 5. Send me a pull request
