@@ -14,9 +14,28 @@
     background-color: $gray;
   }
 
-  ._225b, ._33p7 {
+  ._225b, ._33p7, ._5jdr, ._5jei {
     background: $darkgray;
   }
+
+  // Sticker Search
+  ._5jdr {
+    border-radius: 3px;
+    label._58ak {
+      background: $darkgray;
+      margin-bottom: 3px;
+      border: none;
+      &:focus {
+        border-bottom: 2px solid $wine;
+      }
+    }
+  }
+
+  // Chat Emoji
+  ._2poz._ui9._576q, ._2poz._ui9._383m {
+    border: none !important;
+  }
+
 
   // Chat Body
   ._4u-c._1wfr._9hq {
@@ -63,7 +82,7 @@
   ._4rv3, span._3oh-._58nk, span._3oh-._58nk span, ._2jnv, ._3q34,
   ._3q35, span._3oh-, ._1mf._1mj span, ._1li_ a, ._4rpj em._4qba,
   ._3eus em._4qba, ._19jt em._4qba, ._4eby ._5ixy, div._29hk em._4qba, ._1tqi em._4qba,
-  h2._4ebz, label.uiInputLabelLabel em._4qba, div._5742 em._4qba {
+  h2._4ebz, label.uiInputLabelLabel em._4qba, div._5742 em._4qba, ._28he, ._5bxm {
     @include text;
   }
   span._54nh em._4qba {
@@ -165,20 +184,19 @@
 
   // Search bar
   ._5iwm {
-    padding: 15px 12px;
     ._58al {
       @include highlight;
       @include ease(background);
       background-color: $gray;
       color: $cream;
+      border-radius: 0px;
       &::-webkit-input-placeholder {
         color: $cream;
       }
-      border-radius: 0;
       &:focus {
         @include linear(padding);
-        padding: 15px 0 25px 35px;
-        margin-bottom: 10px;
+        padding: 25px;
+        margin: 10px 0;
         border-bottom: 2px solid $wine;
       }
       &:not(:focus) {
@@ -200,7 +218,7 @@
     }
     &:focus {
       @include linear(padding);
-      padding: 15px 0 15px 15px;
+      padding:0px 25px 5px 25px;
       margin-bottom: 10px;
       border-bottom: 2px solid $wine;
     }
@@ -208,6 +226,10 @@
       @include linear(padding);
       padding: none;
     }
+  }
+
+  ._5iwm ._58ak::before {
+    display: none !important;
   }
 
   // Create New Chat Window

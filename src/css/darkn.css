@@ -8,8 +8,20 @@
   transition: background 0.5s ease;
   background-color: #2A2A28; }
 
-.darknUI ._225b, .darknUI ._33p7 {
+.darknUI ._225b, .darknUI ._33p7, .darknUI ._5jdr, .darknUI ._5jei {
   background: #1c1c1c; }
+
+.darknUI ._5jdr {
+  border-radius: 3px; }
+  .darknUI ._5jdr label._58ak {
+    background: #1c1c1c;
+    margin-bottom: 3px;
+    border: none; }
+    .darknUI ._5jdr label._58ak:focus {
+      border-bottom: 2px solid #7F1F40; }
+
+.darknUI ._2poz._ui9._576q, .darknUI ._2poz._ui9._383m {
+  border: none !important; }
 
 .darknUI ._4u-c._1wfr._9hq {
   box-shadow: inset 0 80px 50px -25px #1c1c1c; }
@@ -46,14 +58,14 @@
 .darknUI ._4rv3, .darknUI span._3oh-._58nk, .darknUI span._3oh-._58nk span, .darknUI ._2jnv, .darknUI ._3q34,
 .darknUI ._3q35, .darknUI span._3oh-, .darknUI ._1mf._1mj span, .darknUI ._1li_ a, .darknUI ._4rpj em._4qba,
 .darknUI ._3eus em._4qba, .darknUI ._19jt em._4qba, .darknUI ._4eby ._5ixy, .darknUI div._29hk em._4qba, .darknUI ._1tqi em._4qba,
-.darknUI h2._4ebz, .darknUI label.uiInputLabelLabel em._4qba, .darknUI div._5742 em._4qba {
+.darknUI h2._4ebz, .darknUI label.uiInputLabelLabel em._4qba, .darknUI div._5742 em._4qba, .darknUI ._28he, .darknUI ._5bxm {
   font-family: Raleway, sans-serif;
   color: #FCFBE3 !important; }
   .darknUI ._1htf::selection, .darknUI ._3szq em._4qba::selection, .darknUI ._1lj0 em._4qba::selection,
   .darknUI ._4rv3::selection, .darknUI span._3oh-._58nk::selection, .darknUI span._3oh-._58nk span::selection, .darknUI ._2jnv::selection, .darknUI ._3q34::selection,
   .darknUI ._3q35::selection, .darknUI span._3oh-::selection, .darknUI ._1mf._1mj span::selection, .darknUI ._1li_ a::selection, .darknUI ._4rpj em._4qba::selection,
   .darknUI ._3eus em._4qba::selection, .darknUI ._19jt em._4qba::selection, .darknUI ._4eby ._5ixy::selection, .darknUI div._29hk em._4qba::selection, .darknUI ._1tqi em._4qba::selection,
-  .darknUI h2._4ebz::selection, .darknUI label.uiInputLabelLabel em._4qba::selection, .darknUI div._5742 em._4qba::selection {
+  .darknUI h2._4ebz::selection, .darknUI label.uiInputLabelLabel em._4qba::selection, .darknUI div._5742 em._4qba::selection, .darknUI ._28he::selection, .darknUI ._5bxm::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
 
@@ -149,26 +161,24 @@
   transition: background 0.2s linear;
   background-color: #7F1F40; }
 
-.darknUI ._5iwm {
-  padding: 15px 12px; }
-  .darknUI ._5iwm ._58al {
-    transition: background 0.5s ease;
-    background-color: #2A2A28;
-    color: #FCFBE3;
-    border-radius: 0; }
-    .darknUI ._5iwm ._58al::selection {
-      color: #1c1c1c;
-      background-color: #FF3F80; }
-    .darknUI ._5iwm ._58al::-webkit-input-placeholder {
-      color: #FCFBE3; }
-    .darknUI ._5iwm ._58al:focus {
-      transition: padding 0.2s linear;
-      padding: 15px 0 25px 35px;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #7F1F40; }
-    .darknUI ._5iwm ._58al:not(:focus) {
-      transition: padding 0.2s linear;
-      padding: 15px 12px; }
+.darknUI ._5iwm ._58al {
+  transition: background 0.5s ease;
+  background-color: #2A2A28;
+  color: #FCFBE3;
+  border-radius: 0px; }
+  .darknUI ._5iwm ._58al::selection {
+    color: #1c1c1c;
+    background-color: #FF3F80; }
+  .darknUI ._5iwm ._58al::-webkit-input-placeholder {
+    color: #FCFBE3; }
+  .darknUI ._5iwm ._58al:focus {
+    transition: padding 0.2s linear;
+    padding: 25px;
+    margin: 10px 0;
+    border-bottom: 2px solid #7F1F40; }
+  .darknUI ._5iwm ._58al:not(:focus) {
+    transition: padding 0.2s linear;
+    padding: 15px 12px; }
 
 .darknUI ._4jgt._14-7 {
   margin: 5px; }
@@ -182,12 +192,15 @@
     color: #FCFBE3; }
   .darknUI input._58al:focus {
     transition: padding 0.2s linear;
-    padding: 15px 0 15px 15px;
+    padding: 0px 25px 5px 25px;
     margin-bottom: 10px;
     border-bottom: 2px solid #7F1F40; }
   .darknUI input._58al:not(:focus) {
     transition: padding 0.2s linear;
     padding: none; }
+
+.darknUI ._5iwm ._58ak::before {
+  display: none !important; }
 
 .darknUI ._2y8_, .darknUI ._4t2a {
   background-color: #1c1c1c !important; }
@@ -202,7 +215,7 @@
   position: absolute;
   z-index: 300;
   right: 50px;
-  bottom: 50px;
+  top: 60px;
   color: #2A2A28;
   font-size: 8px;
   font-weight: 900;
