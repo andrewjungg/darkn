@@ -50,6 +50,12 @@ gulp.task('images', function() {
   .pipe(gulp.dest('dist/img'))
 });
 
+// Move Fonts
+gulp.task('fonts', function() {
+  return gulp.src('src/fonts/**/*')
+  .pipe(gulp.dest('dist/fonts'))
+})
+
 // Move manifest to dist
 gulp.task('manifest', function() {
   return gulp.src('src/manifest.json')
@@ -83,7 +89,7 @@ gulp.task('watch', ['styles'], function() {
 // Build Project Task
 gulp.task('build', function (callback) {
   sequence('clean',
-    ['styles', 'uglify', 'images', 'manifest', 'html'],
+    ['styles', 'uglify', 'images', 'fonts', 'manifest', 'html'],
     callback
   );
 });
@@ -91,7 +97,7 @@ gulp.task('build', function (callback) {
 // Default Task
 gulp.task('default', function(callback) {
   sequence('clean',
-    ['uglify', 'images', 'html', 'manifest'],
+    ['uglify', 'images', 'fonts', 'html', 'manifest'],
     'watch',
     callback
   );

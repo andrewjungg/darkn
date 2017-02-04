@@ -14,7 +14,7 @@
     background-color: $gray;
   }
 
-  ._225b, ._33p7, ._5jdr, ._5jei {
+  ._225b, ._33p7, ._5jdr, ._5jei, ._1er4 {
     background: $darkgray;
   }
 
@@ -36,6 +36,11 @@
     border: none !important;
   }
 
+  // Chat Head Pictures
+  ._4ldz ._4ld-, ._jf2 {
+    @include linear(border-radius);;
+    border-radius: 1.3em !important;
+  }
 
   // Chat Body
   ._4u-c._1wfr._9hq {
@@ -195,8 +200,8 @@
       }
       &:focus {
         @include linear(padding);
-        padding: 25px;
-        margin: 10px 0;
+        padding-top: 5px;
+        margin-top: 5px;
         border-bottom: 2px solid $wine;
       }
       &:not(:focus) {
@@ -228,7 +233,7 @@
     }
   }
 
-  ._5iwm ._58ak::before {
+  ._5iwm ._58ak::before, ._5jdr ._5jds {
     display: none !important;
   }
 

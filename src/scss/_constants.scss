@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed');
 
 // Font Constants
-$raleway: Raleway, sans-serif;
-$oswald: Oswald, sans-serif;
+$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto Condensed', sans-serif;
 
 // Color
 $cream: #FCFBE3;
@@ -21,18 +21,14 @@ $wine: #7F1F40;
 }
 @mixin text {
   @include highlight;
-  font: {
-    family: $raleway
-  }
+  font-family: $raleway !important;
   color: $cream !important;
 }
 
 
 @mixin title {
   @include highlight;
-  font: {
-    family: $oswald
-  }
+  font-family: $roboto !important;
   color: $cream !important;
 }
 

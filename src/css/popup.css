@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed");
 .bg {
   width: auto;
   height: auto;
@@ -9,7 +9,7 @@ h2 {
   font-size: 24px; }
 
 .instructions {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #FCFBE3 !important;
   font-size: 15px;
   margin: 5px; }

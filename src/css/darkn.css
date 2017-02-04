@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster");
-@import url("https://fonts.googleapis.com/css?family=Raleway|Oswald|Lobster");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed");
 .darknUI path, .darknUI svg, .darknUI circle {
   stroke: #FCFBE3 !important;
   fill: #FCFBE3 !important; }
@@ -8,7 +8,7 @@
   transition: background 0.5s ease;
   background-color: #2A2A28; }
 
-.darknUI ._225b, .darknUI ._33p7, .darknUI ._5jdr, .darknUI ._5jei {
+.darknUI ._225b, .darknUI ._33p7, .darknUI ._5jdr, .darknUI ._5jei, .darknUI ._1er4 {
   background: #1c1c1c; }
 
 .darknUI ._5jdr {
@@ -23,6 +23,10 @@
 .darknUI ._2poz._ui9._576q, .darknUI ._2poz._ui9._383m {
   border: none !important; }
 
+.darknUI ._4ldz ._4ld-, .darknUI ._jf2 {
+  transition: border-radius 0.2s linear;
+  border-radius: 1.3em !important; }
+
 .darknUI ._4u-c._1wfr._9hq {
   box-shadow: inset 0 80px 50px -25px #1c1c1c; }
 
@@ -31,7 +35,7 @@
   background-color: #1c1c1c; }
 
 .darknUI ._1mf._1mj span {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #FCFBE3 !important; }
   .darknUI ._1mf._1mj span::selection {
     color: #1c1c1c;
@@ -59,7 +63,7 @@
 .darknUI ._3q35, .darknUI span._3oh-, .darknUI ._1mf._1mj span, .darknUI ._1li_ a, .darknUI ._4rpj em._4qba,
 .darknUI ._3eus em._4qba, .darknUI ._19jt em._4qba, .darknUI ._4eby ._5ixy, .darknUI div._29hk em._4qba, .darknUI ._1tqi em._4qba,
 .darknUI h2._4ebz, .darknUI label.uiInputLabelLabel em._4qba, .darknUI div._5742 em._4qba, .darknUI ._28he, .darknUI ._5bxm {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #FCFBE3 !important; }
   .darknUI ._1htf::selection, .darknUI ._3szq em._4qba::selection, .darknUI ._1lj0 em._4qba::selection,
   .darknUI ._4rv3::selection, .darknUI span._3oh-._58nk::selection, .darknUI span._3oh-._58nk span::selection, .darknUI ._2jnv::selection, .darknUI ._3q34::selection,
@@ -76,7 +80,7 @@
   color: #FCFBE3 !important; }
 
 .darknUI ._hh7 a {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #FCFBE3 !important; }
   .darknUI ._hh7 a::selection {
     color: #1c1c1c;
@@ -102,14 +106,14 @@
     background-color: #FF3F80; }
 
 .darknUI ._1ht6 {
-  font-family: Oswald, sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
   color: #FCFBE3 !important; }
   .darknUI ._1ht6::selection {
     color: #1c1c1c;
     background-color: #FF3F80; }
 
 .darknUI ._5742 h2._17w2 {
-  font-family: Oswald, sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
   color: #FCFBE3 !important;
   font-size: 16px;
   font-weight: bold; }
@@ -120,7 +124,7 @@
 .darknUI ._1_fz {
   text-align: center !important; }
   .darknUI ._1_fz ._17w2 ._3oh- span {
-    font-family: Oswald, sans-serif;
+    font-family: "Roboto Condensed", sans-serif !important;
     color: #FCFBE3 !important;
     font-size: 18px;
     font-weight: bold; }
@@ -151,7 +155,7 @@
   background-color: #2A2A28; }
 
 .darknUI ._364g {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #FCFBE3 !important; }
   .darknUI ._364g::selection {
     color: #1c1c1c;
@@ -173,8 +177,8 @@
     color: #FCFBE3; }
   .darknUI ._5iwm ._58al:focus {
     transition: padding 0.2s linear;
-    padding: 25px;
-    margin: 10px 0;
+    padding-top: 5px;
+    margin-top: 5px;
     border-bottom: 2px solid #7F1F40; }
   .darknUI ._5iwm ._58al:not(:focus) {
     transition: padding 0.2s linear;
@@ -199,7 +203,7 @@
     transition: padding 0.2s linear;
     padding: none; }
 
-.darknUI ._5iwm ._58ak::before {
+.darknUI ._5iwm ._58ak::before, .darknUI ._5jdr ._5jds {
   display: none !important; }
 
 .darknUI ._2y8_, .darknUI ._4t2a {
@@ -214,8 +218,8 @@
   width: 50px !important;
   position: absolute;
   z-index: 300;
-  right: 50px;
-  top: 60px;
+  right: 70px;
+  top: 62px;
   color: #2A2A28;
   font-size: 8px;
   font-weight: 900;
