@@ -212,14 +212,16 @@
 .darknUI .__6m, .darknUI ._4ik5._4ik4 {
   color: #FCFBE3 !important; }
 
+span#darknButton {
+  position: absolute;
+  z-index: 300;
+  right: 55px;
+  top: 62px; }
+
 .darknButton {
   display: block;
   height: 50px !important;
   width: 50px !important;
-  position: absolute;
-  z-index: 300;
-  right: 70px;
-  top: 62px;
   color: #2A2A28;
   font-size: 8px;
   font-weight: 900;

@@ -1,13 +1,14 @@
 @import 'constants';
-
+span#darknButton {
+  position: absolute;;
+  z-index: 300;
+  right: 55px;
+  top: 62px;
+}
 .darknButton {
   display: block;
   height: 50px !important;
   width: 50px !important;
-  position: absolute;
-  z-index: 300;
-  right: 70px;
-  top: 62px;
   color: $gray;
   font-size: 8px;
   font-weight: 900;

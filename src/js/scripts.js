@@ -33,7 +33,7 @@ chrome.runtime.sendMessage({}, () => {
     if (document.readyState === 'complete') {
       clearInterval(intervalCheck);
 
-      const container = document.getElementsByTagName('body')[0],
+      const container = document.getElementsByClassName('_2sdm')[0],
       darknButton = document.createElement('span'),
       darknText = document.createElement('span'),
       bulb = `<div class="container">
