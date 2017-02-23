@@ -14,7 +14,7 @@
     background-color: $gray;
   }
 
-  ._225b, ._33p7, ._5jdr, ._5jei, ._1er4 {
+  ._225b, ._33p7, ._5jdr, ._5jei, ._1er4, ._56i7, ._5jmp {
     background: $darkgray;
   }
 
@@ -32,7 +32,7 @@
   }
 
   // Chat Emoji
-  ._2poz._ui9._576q, ._2poz._ui9._383m {
+  ._2poz._ui9._576q, ._2poz._ui9._383m, [data-testid='sticker'] {
     border: none !important;
   }
 
@@ -87,7 +87,7 @@
   ._4rv3, span._3oh-._58nk, span._3oh-._58nk span, ._2jnv, ._3q34,
   ._3q35, span._3oh-, ._1mf._1mj span, ._1li_ a, ._4rpj em._4qba,
   ._3eus em._4qba, ._19jt em._4qba, ._4eby ._5ixy, div._29hk em._4qba, ._1tqi em._4qba,
-  h2._4ebz, label.uiInputLabelLabel em._4qba, div._5742 em._4qba, ._28he, ._5bxm {
+  h2._4ebz, label.uiInputLabelLabel em._4qba, div._5742 em._4qba, ._28he, ._5bxm, ._56i7 em._4qba, ._5jmp em._4qba {
     @include text;
   }
   span._54nh em._4qba {
@@ -101,6 +101,26 @@
     &:hover {
       @include ease(background);
       background-color: $wine !important;
+    }
+  }
+
+  // Arrow Carat
+  i._53io {
+    display: none;
+  }
+
+  // Polls
+
+  // Poll option radio button
+  ._2m5p {
+    border: 1px solid $wine;
+  }
+
+  // Poll input
+  label._9fw._58ak._3ct8 input {
+    width: 75%;
+    &:active {
+      padding: none;
     }
   }
 
@@ -156,7 +176,6 @@
 
   // Your Message Bubbles
   ._o46._3i_m ._3058, ._o46._3i_m ._3058._15gf ._2poz {
-    @include ease(background);
     background-color: transparent !important;
     border: 2px solid $wine;
   }
